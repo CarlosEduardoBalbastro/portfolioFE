@@ -1,0 +1,38 @@
+/* 
+1. En nuestro index.html generar con width y height el elemento nav.
+2. Crear un archivo nuevo llamado sobreMi.html
+3. Colocar dentro de nuestro index.html del elemento nav los siguientes 
+vínculos: 
+a. Inicio 
+b. Sobre Mí 
+c. Comprar 
+d. Facebook 
+e. Instagram 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+}
+
+.nav {
+    width: 33%;
+    height: 11%;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.nav ul li{
+    font-size: 1em;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+}
