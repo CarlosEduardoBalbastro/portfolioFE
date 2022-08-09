@@ -1,6 +1,10 @@
 
-.col{
-background-color: rgba(137, 43, 226, 0.103);
-border:1px solid blueviolet;
+img {
+    filter: grayscale(80%);
+    width: 50%;
+}
 
+
+.icon-contacto:hover{
+    cursor: pointer;
 }

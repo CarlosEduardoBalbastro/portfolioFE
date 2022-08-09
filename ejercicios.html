@@ -4,98 +4,748 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercisios</title>
+    <title>Ejercicios</title>
    <link rel="stylesheet" href="/portfolioFE/css/bootstrap.min.css">
    <link rel="stylesheet" href="/portfolioFE/styles.css">
+   
 </head>
-<body>
-  
-  <nav class="navbar  navbar-expand-lg">
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+<!-- menu navegacion -->
+
+  <nav class="navbar navbar-expand-sm bg-gradient text-bg-dark navbar-dark">
     <div class="container-fluid">
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class=" navbar-nav me-auto mb-2 mb-lg-0">
+      <a class="navbar-brand mx-3" href="https://github.com/CarlosEduardoBalbastro"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github text-white" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </svg></a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre mi</a>
+            <a class="nav-link" href="#sobreMi">Sobre mi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Formación</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Portfolio
-            </a>
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>  
+          <li class="nav-item dropdown dropdown-toggle-split">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Portfolios</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">working progress foto</a></li>
-              <li><a class="dropdown-item" href="#">working progres 2</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">working progres 3</a></li>
+              <li><a class="dropdown-item" href="#working_progress_foto">Working Progres pagina Fotografia</a></li>
+              <li><a class="dropdown-item" href="#working_progress_escMusica">Working Progress pagina de Escuela de Musica</a></li>
+              <li><a class="dropdown-item" href="#working_progress_dietetica">Working Progres Pagina Dietetica</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Idioma
-            </a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Idioma</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Inglés</a></li>
               <li><a class="dropdown-item" href="#">Portugués</a></li>
-             
-              
+              <!-- <li><a class="dropdown-item" href="#">A third link</a></li> -->
             </ul>
           </li>
-
-        
-          
         </ul>
-      
       </div>
     </div>
   </nav>
-
-  <!-- <ul class="text-end list-inline">
-    <li class="list-inline-item">HOME</li>
-    <li class="list-inline-item">Sobre mi</li>
-    <li class="list-inline-item">Formacion</li>
-    <li class="list-inline-item"><a class="dropdown-item" href="#">Portfolio</a></li>
-    <li class="list-inline-item">Idioma</li>
+  
 
 
 
-
-  </ul> -->
-
-
-  <figure class="text-center">
-    <blockquote class="blockquote">
-      <p>Carlos Eduardo Balbastro</p>
-    </blockquote>
-    <figcaption class="blockquote-footer">
-      DEVELOPER<cite title="Source Title"> FRONTEND JR</cite>
-    </figcaption>
-  </figure>
-
-  <br>
-
-
-  <div class="card text-end" style="width: 18rem;">
-    <!-- <img src="..." class="card-img-top" alt="..."> -->
-    <img src="/img/DSC_1958_perfil_CEB.png" class="card-img-top"  alt=""> 
-    <div class="card-body">
-      <h5 class="card-title ">Charly Dev</h5>
-      <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+<!-- Header Nombre mas Foto -->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-sm-6">
+      <figure class="text-center m-2 mb-0 p-2">
+        <blockquote class="blockquote">
+          <p class="display-6">Carlos Eduardo Balbastro</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          DEVELOPER<cite title="Source Title"> FRONTEND JR</cite>
+        </figcaption>
+      </figure>
     </div>
+    <div class="col-sm-6">
+      <img src="/img/DSC_1958_perfil_CEB.png" class="w-50 rounded-circle mt-0 pt-0 float-sm-start" alt="Charly Dev" width="100">
+      
+    </div>
+
+
   </div>
+</div>
+
+
+
+<br>
+
+
+<!-- sobre mi -->
+<div class="container" id="sobreMi">
+ 
+  <a href="#sobreMiHiden" type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="collapse"  ><h3>Sobre mi...</h3></a>
+  <!-- <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a> -->
+  <!-- <div class="btn-edit" onclick="cambiar()">
+    <a href="#" class="btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil text-decoration-none text-dark" viewBox="0 0 16 16">
+        <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+      </svg>
+    </a>
+  </div>  -->
+  <!-- <div class="collapse multi-collapse" id="multiCollapseExample1">
+    <div class="card card-body">
+      Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+    </div> -->
+    <div class="card card-body border-0">
+      <p id="sobreMiHiden" type="text" class="collapse multi-collapse">El 2009 me formé como Fotografo desde entonces realizo distintos trabajos como Fotografía de Eventos Sociales, 
+        Retratos, Productos, Diseño y Prensa. <br>
+         El 1 de febrero del 2021 comencé a estudiar de manera autodidacta <b>HTML</b>, <b>CSS</b>  y <b>JS</b>. <br>
+        En el año 2022 recibi una Beca de la <b>Empresa i2T</b> 
+        sobre "Fundamentos de la Programación" y concluí con éxito. <br>
+        Actualmente estoy Cursando 
+   la "Segunda Etapa de Argentina Programa #YoProgramo".</p> 
+    </div>
+
+   
    
   
-    
 
+</div>
+
+
+
+
+
+<!-- formacion y habilidades -->
+
+
+<div class="container">
+  <div class="row align-items-start">
+
+    <!-- FORMACIOn -->
+
+    <div class="col-sm-6">
+      <h1 class="text-center mx-5 border-bottom border-2 py-3">Formación</h1>
+        <!-- fecha -->
+  <h2 class="blockquote-footer my-2">2022</h2>
+
+
+  <!-- boton que genera modal -->
+
+  <a type="button"  class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#certificadoMumuki">
+    Curso "Sé Programar" Desarrollado por CESSI, i2T y Mumuki
+    duracion 95hs</a> 
+
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="certificadoMumuki" tabindex="-1" aria-labelledby="mumukiModalLabel" aria-hidden="true">
+          
+      <div class="modal-dialog modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title" id="mumukiModalLabel">2022</div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" arial-label="Close"></button>
+          </div>
+          <div class="modal-body w-100">
+            <img src="/img/i2t_etapa_1_2022_CarlosBalbastro.jpg" class="img-fluid mx-auto d-block w-100" alt="Certificado Mumuki">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  
+<!-- fecha -->
+
+<h2 class="blockquote-footer my-2">2022</h2>
+
+
+<!-- boton que genera modal -->
+
+<a type="button"  class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#certificadoScrum">
+  Curso "Gestión de Proyectos con Metodologías Ágiles" de FUNDACIÓN
+TELEFONICA MOVISTAR cuya carga horario fue de 40hs
+</a>
+
+
+  <!-- Modal -->
+
+  <div class="modal fade" id="certificadoScrum" tabindex="-1" aria-labelledby="scrumModalLabel" aria-hidden="true">
+        
+    <div class="modal-dialog modal-fullscreen-sm-down">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title" id="scrumModalLabel">2022</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" arial-label="Close"></button>
+        </div>
+        <div class="modal-body w-100">
+          <img src="/img/FT AR - Certificado.jpg" class="img-fluid mx-auto d-block w-100" alt="fundacion telefonica">
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- fecha -->
+
+   <h2 class="blockquote-footer my-2">2021</h2>
+
+   <!-- boton que genera modal  -->
+   <a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#certificadoUnc">
+     Curso "Diseño y Desarrollo Web" dictado por la UNIVERSIDAD
+   TECNOLÓGICA DE CÓRDOBA cuya carga horario fue de 20hs
+   </a>
+   
+   
+   <!-- modal -->
+   
+   <div class="modal fade" id="certificadoUnc" tabindex="-1" aria-labelledby="uncModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-fullscreen-sm-down">
+       <div class="modal-content">
+         <div class="modal-header">
+           <div class="modal-title" id="uncModalLabel">2021</div>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" arial-label="Close"></button>
+         </div>
+         <div class="modal-body w-100">
+           <img src="/img/certificado_ub5c7RmqqReqmdYjH4Z_29537373.jpg" class="img-fluid mx-auto d-block w-100" alt="certificado UTN">
+         </div>
+       </div>
+     </div>
+   </div>
+   
+   <!-- fecha -->
+
+<h2 class="blockquote-footer my-2">2021</h2>
+
+<!-- boton modal -->
+
+<a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#certificadoPolitecnico">
+  Curso "Diseño y Desarrollo Web" organizado por la SECRETARIA
+  DE PROMOCIÓN DE EMPLEO DE LA MUNICIPALIDAD DE CÓRDOBA
+  dictado por profesionales de la UNIVERSIDAD TECNOLÓGICA NACIONAL
+</a>
+
+<!-- modal -->
+<div class="modal fade" id="certificadoPolitecnico" tabindex="-1" aria-labelledby="politecnicoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen-sm-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="politecnicoModalLabel">2021</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body w-100">
+        <img src="/img/certificado_politecnico.jpg" class="img-fluid mx-auto d-block w-100" alt="certificado politecnico">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- fecha -->
+
+<h2 class="blockquote-footer my-2">2021</h2>
+
+<!-- boton modal -->
+
+<a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#fundacionTelefonica1">
+  Curso "Diseño Web con HTML5 y CSS3" dictado por FUNDACIÓN TELEFÓNICA
+MOVISTAR cuya carga horario fue 30hs
+</a>
+
+<!-- modal -->
+<div class="modal fade" id="fundacionTelefonica1" tabindex="-1" aria-labelledby="fundacionModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen-sm-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="fundacionModalLabel">2021</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body w-100">
+        <img src="/img/Certificado Fundamentos del Diseño Grafico.jpg" class="img-fluid mx-auto d-block w-100" alt="certificado fundacion telefonica">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- FECHA -->
+
+<h2 class="blockquote-footer my-2">2021</h2>
+
+<!-- boton modal -->
+
+<a type="botton" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#fundacionTelefonica2">Ha superado con éxito el curso de 30hs "Introduccion a la Programación"
+  dictado por FUNDACIÓN TELEFÓNICA MOVISTAR</a>
+
+<!-- modal -->
+
+<div class="modal fade" id="fundacionTelefonica2" tabindex="-1" aria-labelledby="telefonicaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen-sm-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="telefonicaModalLabe">2021</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body w-100">
+        <img src="/img/FT AR - Introducción a la Programación.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<h2 class="blockquote-footer my-2">2021</h2>
+
+<a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#fundamentosProgramacionTelefonica">
+  Curso "Fundamentos de Programación" de FUNDACIÓN TELEFÓNICA MOVISTAR
+cuya carga horario fue de 40hs
+</a>
+
+<!-- modal -->
+
+<div class="modal fade" id="fundamentosProgramacionTelefonica" tabindex="-1" aria-labelledby="fundProgTelModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen-sm-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="fundProgTelModalLabel">2021</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body w-100">
+        <img src="/img/FT AR - Fundamentos de Programación.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- fecha -->
+<h2 class="blockquote-footer my-2">2021</h2>
+
+<!-- boton modal -->
+
+<a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#habilidadEmpleo">
+  Ha superado con éxito el Curso "Habilidades para el Empleo" de
+  FUNDACIÓN TELEFÓNICA MOVISTAR cuya carga hpraria fue de 30hs
+</a>
+
+<!-- modal -->
+
+<div class="modal fade" id="habilidadEmpleo" tabindex="-1" aria-labelledby="habilidadEmpleoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen-sm-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="habilidadEmpleoModalLabel">2021</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body w-100">
+        <img src="/img/FT AR - Habilidades para el Empleo.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fecha -->
+<h2 class="blockquote-footer my-2">2021</h2>
+
+<!-- boton modal -->
+
+<a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#graphicDesign">
+  Certifico que Ha asistido y completado el curso "Fundamentos de Diseño Grafico" de 18hs
+  en Centro de Capacitacion y Desarrollo Profesional Educacion IT
+</a>
+
+<!-- modal -->
+
+<div class="modal fade" id="graphicDesign" tabindex="-1" aria-labelledby="graphicDesignModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen-sm-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="graphicDesignModalLabel">2021</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body w-100">
+        <img src="/img/Certificado Fundamentos del Diseño Grafico.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- fecha -->
+<h2 class="blockquote-footer my-2">2021</h2>
+
+<!-- boton modal -->
+
+<a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#introMundoWeb">
+  Curso "Introducción al Mundo Web" 12hs dictado por 
+  Centro de Capacitacion y Desarrollo Profesional Educacion IT
+</a>
+
+<!-- modal -->
+
+<div class="modal fade" id="introMundoWeb" tabindex="-1" aria-labelledby="introMundoWebModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen-sm-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="introMundoWebModalLabel">2021</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body w-100">
+        <img src="/img/Certificado Introduccion al Mundo Web.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fecha -->
+<h2 class="blockquote-footer my-2">2021</h2>
+
+<!-- boton modal -->
+
+<a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#introLenguajeProgramacion">
+Curso "Introducción al lenguaje de Programación" 12hs 
+dictado por Centro de Capacitacion y Desarrollo Profesional Educacion IT
+</a>
+
+<!-- modal -->
+
+<div class="modal fade" id="introLenguajeProgramacion" tabindex="-1" aria-labelledby="introLenProgModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen-sm-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="introLenProgModalLabel">2021</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body w-100">
+        <img src="/img/Certificado Introducción Lenguaje de Programación.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- fecha -->
+<h2 class="blockquote-footer my-2">2021</h2>
+
+<!-- boton modal -->
+
+<a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#progJs">
+  ha superado con éxito el curso de 40hs "Programación con JavaScript"
+  de la FUNDACIÓN TELEFÓNICA MOVISTAR
+</a>
+
+<!-- modal -->
+
+<div class="modal fade" id="progJs" tabindex="-1" aria-labelledby="progJsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen-sm-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="progJsModalLabel">2021</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body w-100">
+        <img src="/img/FT AR - Programación con JavaScript.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fecha -->
+<h2 class="blockquote-footer my-2">2021</h2>
+
+<!-- boton modal -->
+
+<a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#tecnicoImagenes">
+  Técnico Superior en Imágenes 
+Escuela de Artes Aplicadas Lino Enea Spilimbergo
+</a>
+
+<!-- modal -->
+
+<div class="modal fade" id="tecnicoImagenes" tabindex="-1" aria-labelledby="tecnicoImagenesModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen-sm-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="tecnicoImagenesModalLabel">2021</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body w-100">
+        <img src="/img/Titulo_Fotografia_Carlos_Balbastroweb.jpg"Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<!-- TRABAJOS HAbilidas Idiomas-->
+
+<div class="col-sm-6">
+  <h1 class="text-center mx-5 border-bottom border-2 py-3">Portfolio</h1>
+    <!-- fecha -->
+<h2 class="blockquote-footer my-2" id="working_progress_foto">2022</h2>
+
+
+<!-- boton que genera modal -->
+
+<a type="button"  class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#certificadoMumuki">
+Working Progres pagina Fotografia</a> 
+
+
+<!-- Modal -->
+
+<div class="modal fade" id="certificadoMumuki" tabindex="-1" aria-labelledby="mumukiModalLabel" aria-hidden="true">
+      
+  <div class="modal-dialog modal-fullscreen-sm-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="mumukiModalLabel">2022</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" arial-label="Close"></button>
+      </div>
+      <div class="modal-body w-100">
+        <img src="" class="img-fluid mx-auto d-block w-100" alt="Certificado Mumuki">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- fecha -->
+
+<h2 class="blockquote-footer my-2" id="working_progress_escMusica">2022</h2>
+
+
+<!-- boton que genera modal -->
+
+<a type="button"  class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#certificadoScrum">
+Working Progress pagina de Escuela de Musica
+</a>
+
+
+<!-- Modal -->
+
+<div class="modal fade" id="certificadoScrum" tabindex="-1" aria-labelledby="scrumModalLabel" aria-hidden="true">
+    
+<div class="modal-dialog modal-fullscreen-sm-down">
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="modal-title" id="scrumModalLabel">2022</div>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" arial-label="Close"></button>
+    </div>
+    <div class="modal-body w-100">
+      <img src="" class="img-fluid mx-auto d-block w-100" alt="fundacion telefonica">
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- fecha -->
+
+<h2 class="blockquote-footer my-2" id="working_progress_dietetica">2021</h2>
+
+<!-- boton que genera modal  -->
+<a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#workingProgressDietetica">
+Working Progres Pagina Dietetica
+</a>
+
+
+<!-- modal -->
+
+<div class="modal fade" id="workingProgressDietetica" tabindex="-1" aria-labelledby="workProgDietModalLabel" aria-hidden="true">
+ <div class="modal-dialog modal-fullscreen-sm-down">
+   <div class="modal-content">
+     <div class="modal-header">
+       <div class="modal-title" id="workProgDietModalLabell">2022</div>
+       <button type="button" class="btn-close" data-bs-dismiss="modal" arial-label="Close"></button>
+     </div>
+     <div class="modal-body w-100">
+       <img src="/img/Proyecto_Dietetica_fullScreen.jpg" class="img-fluid mx-auto d-block w-100" alt="certificado UTN">
+     </div>
+   </div>
+ </div>
+</div>
+
+<!-- fecha -->
+
+<h2 class="blockquote-footer my-2">2021</h2>
+
+<!-- boton modal -->
+
+<a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#certificadoPolitecnico">
+Workin Progres Pagina Salones Fiesta
+</a>
+
+<!-- modal -->
+<div class="modal fade" id="certificadoPolitecnico" tabindex="-1" aria-labelledby="politecnicoModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-fullscreen-sm-down">
+<div class="modal-content">
+  <div class="modal-header">
+    <div class="modal-title" id="politecnicoModalLabel">2021</div>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body w-100">
+    <img src="/img/WEB_MUNI_Certificado.pdf" class="img-fluid mx-auto d-block w-100" alt="certificado politecnico">
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<!-- fecha -->
+
+<h2 class="blockquote-footer my-2">2021</h2>
+
+<!-- boton modal -->
+
+<a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#fundacionTelefonica1">
+Working Progres Pagina Productos
+</a>
+
+<!-- modal -->
+<div class="modal fade" id="fundacionTelefonica1" tabindex="-1" aria-labelledby="fundacionModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-fullscreen-sm-down">
+<div class="modal-content">
+  <div class="modal-header">
+    <div class="modal-title" id="fundacionModalLabel">2021</div>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body w-100">
+    <img src="/img/Certificado Fundamentos del Diseño Grafico.jpg" class="img-fluid mx-auto d-block w-100" alt="certificado fundacion telefonica">
+  </div>
+</div>
+</div>
+</div>
+
+
+<br>
+
+<!-- habilidades e idiomas -->
+
+<div class="container mt-5">
+  <h2 class="text-center mt-5  border-bottom border-2 ">Habilidades</h2>
+  <dl class="mt-5">
+    <dt class="mb-3">Edición de Imágenes y Sonido</dt>
+    <!-- <dd>Edición de Imágenes y Sonido</dd> -->
+    <!-- <dt>Adobe Photoshop</dt> -->
+    <dd class="mb-3">Adobe Photoshop</dd>
+    <dt class="mb-3">Adobe Photoshop Lightroom</dt>
+    <dd class="mb-3">Cubase Steinberg</dd>
+    <dt class="mb-3">Visual Studio Code</dt>    
+
+  <h2 class="text-center mt-5  border-bottom border-2 ">Idiomas</h2>
+
+  <dt>Inglés</dt>
+    <dd>Buen dominio hablado y escrito</dd>
+
+    <dt>Portugués </dt>
+    <dd>Sumamente competente hablado y escrito</dd>
+
+
+  </dl>
+
+
+</div>
+
+<!-- <div class="container">
+  <h2 class="text-center mx-5 mt-5 border-bottom border-2 py-3">Habilidades</h2>
+
+  <h2 class="blockquote-footer  mt-5 text-dark">Edición de Imágenes y Sonido</h2><br>
+  <h2 class="blockquote-footer  mt-2 text-dark">Adobe Photoshop</h2><br>
+  <h2 class="blockquote-footer  mt-2 text-dark">Adobe Photoshop Lightroom</h2><br>
+  <h2 class="blockquote-footer  mt-2 text-dark">Cubase Steinberg</h2><br>
+  <h2 class="blockquote-footer  mt-2 text-dark">Visual Studio Code</h2><br>
+  
+  <br>
+  
+  <h2 class="text-center mx-5 mt-5 border-bottom border-2 py-3">Idiomas</h2>
+  
+  
+  <h2 class="blockquote-footer  mt-2 text-dark">Ingles buen dominio hablado y escrito</h2><br>
+  <h2 class="blockquote-footer  mt-2 text-dark">Portugués sumamente competente hablado y escrito</h2><br>
+</div> -->
+
+
+
+
+</div>
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+
+
+
+  <div class="w-100 mt-5  p-4 bg-dark text-white  text-center" id="contacto">
+    <!-- <a class="icon-contacto text-decoration-none text-white" href="https://www.whatsapp.com/?lang=es" target="_blank" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+      <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+    </svg></a> -->
+
+    <a  class="icon-contacto text-decoration-none text-white" href="https://www.linkedin.com/in/carlos-balbastro" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+    </svg></a>
+  <a  class="icon-contacto text-decoration-none text-white" href="https://www.facebook.com/carloseduardo.balbastro" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+    </svg></a>
+    <a  class="icon-contacto text-decoration-none text-white" href="https://www.whatsapp.com/?lang=es" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+      </svg></a>
+    
+  </div>
+  
+
+
+
+
+
+</div>
+
+
+  
+ 
 
 
   <script src="/portfolioFE/js/bootstrap.bundle.min.js"></script>
+  <script src="/portfolioFE/ejercicios.js"></script>
      
 </body>
 </html>
