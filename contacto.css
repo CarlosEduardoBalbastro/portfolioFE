@@ -1,0 +1,43 @@
+.formulario{
+    position: absolute;
+    margin: 0 auto;
+}
+
+h2 { color: rgba(255, 255, 255, 0.768); 
+    text-align: center;
+    margin: 0; 
+    font-size: 25px;
+     margin-bottom: 10px;}
+    
+    form { width: 400px; 
+        max-width: 98%;
+        margin: auto;
+         background: rgba(0, 0, 0, 0.123);
+    padding: 10px 20px; 
+    font-size: 20px; 
+    margin-top: 50px; 
+    box-sizing: border-box;
+    border-radius: 7px;}
+    
+    input, textarea { width: 100%; 
+        margin-bottom: 20px;
+         padding: 7px; 
+         box-sizing: border-box;
+    font-size: 13px; 
+    border: none; 
+    background-color: rgb(255, 255, 255);}
+    
+    textarea { min-height: 100px;
+         max-height: 200px; 
+         max-width: 100%; 
+         border-radius: 2px;}
+    
+    #boton { background: rgba(153, 205, 50, 0.446);
+         color: white; 
+         padding: 10px;
+          border-radius: 4px;
+    font-size: 15px; 
+    font-weight: bolder; }
+    
+    
+    #boton:hover { cursor: pointer;} 

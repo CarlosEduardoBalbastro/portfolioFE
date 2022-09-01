@@ -1,0 +1,318 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.barra-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #3737371e;
+
+    
+}
+
+.log img {
+
+    width: 10%;
+
+}
+
+.menu-nav ul li {
+    list-style: none;
+    display: inline-flex;
+    padding: 1rem;
+}
+
+
+
+/* nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 35px;
+    text-shadow: 10px 10px 5px rgba(73, 73, 73, 0.151);
+    
+   
+}
+
+.icono{
+    display: block;
+    z-index: 10000;
+    animation: moverIzq 1s ease-in;
+    
+    
+} */
+
+
+/* header {
+
+
+padding: 45px;
+width: 100%;
+} */
+
+.contenedor {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    /* margin: 5rem; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    /* margin: auto; */
+    /* height: auto; */
+    margin-top: 6rem;
+    
+    
+}
+.contenedor a {
+    text-decoration: none;
+    color: #373737;
+}
+
+
+
+
+img { 
+    /* display: block; */
+    /* height: 450px; */
+    /* object-fit: cover; */
+    animation: arriba 1s ease-in;
+    width: 100%;
+}
+
+
+
+
+.textos h1 {
+    font-size: 3rem;
+    animation: moverDcha 1s ease-in;
+    margin: 2rem;
+}
+
+.textos h2 {
+    font-size: 2rem;
+    animation: moverIzq 1s ease-in;
+    margin: 2rem;
+}
+
+.textos a {
+    display: inline-block;
+    /* color: #fff; */
+    font-size: 1.5rem;
+    font-weight: 100px;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 75%;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    animation: arriba 1s ease-in;
+}
+
+
+
+.wave {
+    height: 50px;
+    width: 100vw;
+    /* margin-top:165px; */
+    display: inline-block;
+    position: absolute;
+    margin-top: auto;
+    margin-left: 0;
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+@keyframes moverIzq {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDcha {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes arriba {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@media  screen and (min-width:540px){
+    .contenedor {
+       grid-template-columns: 1fr 1fr;
+    } 
+     
+}
+  
+  
+
+
+    
+   
+    
+/* 
+
+
+@media  screen and (max-width:768px){
+    .container{
+        width: 100%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    
+    
+    img{
+        height: 300px;
+    }
+
+    .textos {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .textos h1{
+        font-size: 60px;
+        margin-top: 10px;
+    }
+    .textos h2{
+        font-size: 65px;
+        margin-top: 10px;
+    }
+    .textos a {
+        margin-top: 15px;
+        font-size: 25px;
+    }
+    .wave{
+        margin-top: 1000px;
+    }
+    
+    
+}
+
+
+
+
+
+
+@media  screen and (max-width:700px){
+    img{
+        height: 200px;
+    }
+    .textos h1{
+        font-size: 40px;
+    }
+    .textos h2{
+        font-size:35px;
+    }
+    .textos a {
+        width: 75%;
+        
+    }
+    .wave{
+        width: 120%;
+        margin-top: 250px;
+    }
+    
+    
+}
+
+
+@media  screen and (max-width:450px){
+    .container{
+        width: 100%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    
+    
+    img{
+        height: 250px;
+        margin-bottom: 50px;
+    }
+
+    .textos {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+
+    .textos h1{
+        font-size: 40px;
+    }
+    .textos h2{
+        font-size: 25px;
+    }
+    .wave{
+        margin-top: 400px;
+    }
+    
+    
+}
+
+
+@media  screen and (max-width:340px){
+    img{
+        height: 150px;
+    }
+    .textos h1{
+        font-size: 35px;
+    }
+    .textos a {
+        width: 120px;
+    }
+    .textos h2{
+        font-size: 15px;
+    }
+    
+    
+} */

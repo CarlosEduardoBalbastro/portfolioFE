@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open sans', sans-serif ;
+
+}
+
+body {
+    background-color: #000;
+}
+
+
+
+
+
+.team_section{
+    display: flex;
+    height: 100vh;
+}
+
+
+.person {
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: .6s;
+}
+
+.person:hover {
+    flex: 3;
+}
+
+.person_pict {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: grayscale(80%);
+    transition: .3s;
+}
+
+.person:hover .person_pict{
+    filter: grayscale(0);
+}
+
+.person_info {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width:100%;
+    opacity: 0;
+    transition: .2s;
+}
+
+.person:hover .person_info{
+    opacity: 1;
+    bottom: 60px;
+    transition-delay: .6s;   
+}
+
+.person_info h2 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.person_info p {
+    color: #fff;
+    font-style:italic;
+    font-weight: bolder;
+    margin-top: 8px;
+    margin-bottom: 20px ;
+}
+
+.social_media a {
+
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #b8a9941f ;
+    line-height: 40px;
+    border-radius:50%;
+    margin: 0 6px;
+    font-size: 18px;
+    transition: .3s linear;
+
+}
+
+.social_media a:hover {
+    /* color: rgba(51, 51, 51, 0.405); */
+    background-color: transparent;
+    transform: scale(1.5);
+}
