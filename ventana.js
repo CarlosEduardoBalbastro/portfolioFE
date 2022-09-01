@@ -1,28 +1,13 @@
-// get the modal 
-
-var modal = document.getElementById('myModal');
 
 
-// get the imagen and insert it inside the modal
+let i = 0;
+let texto = "quiero amar salir por la calle cantando reservarme un vuelo a un lugar tranquilo esperar en silencio sin pensar purificarme y dejarme llenar "
+let speed = 100;
 
-var img = document.getElementById('myImg');
-
-var modalImg = document.getElementById('img01');
-var captionText = document.getElementById('caption');
-
-img.onclick = function(){
-    modal.style.display = 'block';
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-
-// get the span element that close the modal
-
-var span = document.getElementsByClassName('close')[0];
-
-// when the user click on the span (x) close the modal
-
-span.onclick = function(){
-    modal.style.display = 'none'
+function typeWriter(){
+    if(i < texto.length){
+        document.getElementById('demo').innerHTML += texto.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
 }

@@ -1,0 +1,1 @@
+let persona = new Object();
