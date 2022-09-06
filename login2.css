@@ -1,0 +1,244 @@
+.contene3 {
+    background: var(--verde) ;
+   height: 100vh;
+   max-height: 700px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+
+.cabez {
+    width: 300px ;
+    height: 300px;
+    background: var(--piel-una);
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px 0px var(--black) ;
+    position: relative;
+    margin-inline-start: 20%;
+
+}
+
+.cabez:hover .texto {
+    opacity: 1;
+}
+
+
+
+
+.texto{
+    position: absolute;
+    background: var(--white);
+    top: -100px;
+    left: -100px;
+    border-radius: 30px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--piel-una);
+    letter-spacing: 5px;
+    z-index: 5;
+    box-shadow: 0 0 5px 0 var(--black);
+    opacity: 0;
+    animation:texto 3s infinite;
+    transition: opacity 500ms ease-in-out;
+    
+
+}
+
+@keyframes texto {
+    0%{transform: translateX(0%);}
+    15%{transform: translateX(-7%);}
+    30%{transform: translateX(5%);}
+    45%{transform: translateX(-5%);}
+    60%{transform: translateX(3%);}
+    75%{transform: translateX(1%);}
+    100%{transform: translateX(0%);}
+}
+
+
+.orelha-ezq{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    margin: auto 0;
+    width: 50px;
+    height: 50px;
+    background: var(--piel-una);
+    opacity: 0.8;
+    border-radius: 50%;
+    
+}
+
+.orelha-dir{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -20px;
+    margin: auto 0;
+    width: 50px;
+    height: 50px;
+    background: var(--piel-una);
+    opacity: 0.8;
+    border-radius: 50%;
+}
+
+
+
+.olho-ezq {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--white);
+    position: absolute;
+    top: 70px;
+    left: 45px;
+
+}
+
+
+.olho-ezq::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: var(--black);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+
+.olho-dir{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--white);
+    top: 70px;
+    right: 45px;
+}
+
+/* .olho-dir::before{
+    content: '';
+    position: absolute;
+    background: var(--black);
+    height: 30px;
+    width:100%;
+    border-radius: 40px;
+    transform: rotate(45deg);
+
+} */
+
+.olho-dir::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: var(--black);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    /* transform: rotate(-45deg); */
+
+}
+
+
+
+.nar {
+    width: 10%;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+.nar::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--black);
+    opacity: 0.7;
+}
+
+.nar::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--black);
+    opacity: 0.7;
+}
+
+
+.boc{
+    position: absolute;
+    height: 75px;
+    width: 200px;
+    border-radius: 35px;
+    /* background: 35px; */
+    background: var(--black);
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+}
+
+
+.dente-1{
+    position: absolute;
+    bottom: 2px;
+    left: 50px;
+    height: 36px;
+    width: 24px;
+    border-radius: 10px 10px 0  0;
+    background: var(--tooth);
+}
+
+.dente-2{
+    position: absolute;
+    top: 2px;
+    right: 80px;
+    height: 30px;
+    width: 20px;
+    border-radius: 0px 0px 10px  10px;
+    background: var(--tooth);
+}
+
+.dente-3 {
+    position: absolute;
+    bottom: 2px;
+    right: 40px;
+    height: 30px;
+    width: 20px;
+    background: var(--tooth);
+    border-radius: 10px 10px 0 0;
+}
+
+.dente-4 {
+    position: absolute;
+    top: 2px;
+    left: 72px;
+    width: 20px;
+    height: 30px;
+    background: var(--white);
+    border-radius: 0px 0px 10px 10px ;
+}
