@@ -1,43 +1,142 @@
-.formulario{
-    position: absolute;
-    margin: 0 auto;
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+
 }
 
-h2 { color: rgba(255, 255, 255, 0.768); 
-    text-align: center;
-    margin: 0; 
-    font-size: 25px;
-     margin-bottom: 10px;}
+
+.cont_ejemplo_00 {
+
+    position: absolute;
+    width: 370px;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    /* background: rgba(217, 217, 217 , .25); */
+
+
+
+}
+
+.cont_izq {
+    position: absolute;
     
-    form { width: 400px; 
-        max-width: 98%;
-        margin: auto;
-         background: rgba(0, 0, 0, 0.123);
-    padding: 10px 20px; 
-    font-size: 20px; 
-    margin-top: 50px; 
-    box-sizing: border-box;
-    border-radius: 7px;}
+    width: 200px;
+    height: 100vh;
+    left: 0%;
+    /* right: 0%; */
+    top: 0%;
+    /* bottom: 0%; */
+    background: rgba(0, 128, 0, 0.651);
+    /* filter: blur(4px); */
+}
+
+.cont_izq p {
+    position: absolute;
+    left: 6%;
+    right: 6%;
+    top: 12%;
+    bottom: 70%;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    line-height: 66px;
+    color: #FDE71F;
+    text-shadow: rgba(0, 0, 0, .25);
+}
+
+/* .boton {
+    position: absolute;
+    width: 240px;
+    height: 100px;
+    top: 444px;
+    left: 72px;
+    background-color: #EFF2F9;
+    border-radius: 33px;
+
+} */
+
+/* .boton:hover {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, .25);
+
+} */
+
+.cont_dcha {
+    position: absolute;
+/* width: 150px; */
+height: 100vh;
+
+
+}
+
+
+.cont_dcha img {
+    position: absolute;
+
+width: 400px;
+margin-inline-start: 90px;
+margin-block-start: 100px;
+}
+
+.cont_dcha p {
+    position: absolute;
+margin-block-start: 355px;
+margin-inline-start: 220px ;
+
+
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 1.7rem;
+line-height: 30px;
+
+color: #737373;
+}
+
+
+.contenedor{
+    display: none;
+    position: relative;
+    /* width: 400px; */
+    height: 900px;
+    /* background: rgba(255, 0, 0, 0.349); */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.seccion_img {
+    position: absolute;
+    top: 0;
     
-    input, textarea { width: 100%; 
-        margin-bottom: 20px;
-         padding: 7px; 
-         box-sizing: border-box;
-    font-size: 13px; 
-    border: none; 
-    background-color: rgb(255, 255, 255);}
+
+
     
-    textarea { min-height: 100px;
-         max-height: 200px; 
-         max-width: 100%; 
-         border-radius: 2px;}
-    
-    #boton { background: rgba(153, 205, 50, 0.446);
-         color: white; 
-         padding: 10px;
-          border-radius: 4px;
-    font-size: 15px; 
-    font-weight: bolder; }
-    
-    
-    #boton:hover { cursor: pointer;} 
+}
+
+.seccion_img img {
+    /* width: 400px; */
+    opacity: 1;
+}
+
+.seccion_text {
+    position: absolute;
+
+    top: 300px;
+    display: flex;
+    gap: 15px;
+}
+
+.seccion_text p {
+    font-size: 1.3rem;
+    line-height: 5px;
+    color: #737373;
+
+}
+
+.barra  {
+    font-weight: 900;
+}
